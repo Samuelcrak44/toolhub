@@ -1,0 +1,9 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mytoolhub",
+  "compatibility_date": "2026-05-23",
+  "assets": {
+    "directory": "microtools",
+    "not_found_handling": "single-page-application"
+  }
+}
