@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aviso legal | ToolHub</title>
+<meta name="description" content="Aviso legal de ToolHub.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="/css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-inner">
+    <a href="/" class="logo"><span class="logo-mark"></span><span>ToolHub</span></a>
+    <nav class="nav-links"><a href="/">Inicio</a><a href="/blog/">Blog</a></nav>
+  </div>
+</header>
+
+<main>
+  <article class="content-page">
+    <h1>Aviso legal</h1>
+    <p class="lead">Información sobre el uso de este sitio web.</p>
+
+    <h2>Sobre ToolHub</h2>
+    <p>ToolHub es un proyecto personal sin fines comerciales que ofrece herramientas online gratuitas (conversores, calculadoras, generadores). El servicio se presta sin coste alguno y no recoge datos personales de los usuarios.</p>
+
+    <h2>Uso del servicio</h2>
+    <p>Las herramientas se ofrecen con fines informativos y de ayuda. Los resultados (cálculos, conversiones, estimaciones) son <strong>orientativos</strong> y no sustituyen el asesoramiento profesional cualificado en materias financieras, fiscales, médicas o legales.</p>
+
+    <h2>Privacidad</h2>
+    <p>Este sitio no utiliza cookies de seguimiento ni recoge información personal. Todas las herramientas se ejecutan localmente en tu navegador y los datos que introduces no se envían a ningún servidor.</p>
+    <p>La única excepción es la herramienta «¿Cuál es mi IP?» que consulta un servicio externo para mostrarte tu información de red, y el conversor de divisas que obtiene tasas de cambio actualizadas. Ninguna de estas consultas guarda información identificable.</p>
+
+    <h2>Propiedad intelectual</h2>
+    <p>El contenido de este sitio web (diseño, código, textos) es de uso libre con fines personales. Si quieres reutilizarlo, agradeceré una mención.</p>
+
+    <h2>Limitación de responsabilidad</h2>
+    <p>El servicio se ofrece "tal cual", sin garantías de disponibilidad ni de exactitud absoluta. No me hago responsable de decisiones tomadas basándose únicamente en los resultados de estas herramientas.</p>
+
+    <h2>Contacto</h2>
+    <p>Para sugerencias o reportar errores: [toolhubsupport@gmail.com]</p>
+    <blockquote>Sustituye este email por uno tuyo (puede ser un Gmail nuevo solo para esto) o elimina esta sección si no quieres ofrecer contacto.</blockquote>
+
+    <hr>
+    <p class="meta">Última actualización: <span id="upd"></span></p>
+  </article>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-links">
+      <a href="/">Inicio</a><a href="/blog/">Blog</a>
+      <a href="/legal/aviso-legal.html">Aviso legal</a>
+      <a href="/legal/terminos.html">Términos</a>
+    </div>
+    <p>© <span id="year"></span> ToolHub</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('upd').textContent = new Date().toLocaleDateString('es-ES',{year:'numeric',month:'long',day:'numeric'});
+</script>
+</body>
+</html>
